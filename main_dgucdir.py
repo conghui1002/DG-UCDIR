@@ -250,7 +250,7 @@ def main_worker(gpu, args):
         print(f'=> Start training epoch #{epoch}')
         cluster_result = None
         if epoch >= args.warmup_epoch:
-            cluster_result = cluter_getter(train_eval_loaders, model, epoch, args)
+            cluster_result = cluter_getter(train_eval_loaders, model, args)
         train(train_loader, model, criterion, optimizer, epoch, args, cluster_result=cluster_result)
         print(f'=> Finished training epoch #{epoch}')
 
