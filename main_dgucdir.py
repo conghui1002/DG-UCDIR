@@ -255,7 +255,7 @@ def main_worker(gpu, args):
         print(f'=> Finished training epoch #{epoch}')
 
         checkpoint_freq = args.save_n_epochs
-        if args.is_root and np.mod(epoch, checkpoint_freq) == 0:
+        if args.is_root and np.mod(epoch+1, checkpoint_freq) == 0:
             save_dict = {
                 'epoch': epoch,
                 'arch': args.arch,

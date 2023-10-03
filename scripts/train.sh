@@ -10,7 +10,7 @@ python -m torch.distributed.launch --nproc_per_node=1  --master_port 47700 main_
 --print-freq 50 \
 --clean-model moco_v2_800ep_pretrain.pth.tar \
 --exp_folder_name domainnet_clipart-sketch \
---save_n_epochs 100 \
+--save_n_epochs 10 \
 --moco-k 5120 \
 --data clipart.txt,sketch.txt \
 --eval-data clipart.txt,sketch.txt,infograph.txt,real.txt,painting.txt,quickdraw.txt \
