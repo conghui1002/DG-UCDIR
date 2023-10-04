@@ -18,3 +18,14 @@ You can modify line 15-16 in ./scripts/train.sh accordingly to train with the se
 ```
 CUDA_VISIBLE_DEVICES=0 ./scripts/train.sh
 ```
+
+## Citation
+If you find our work helpful to your reseach, please cite our paper:
+```
+@inproceedings{hu2023unsupervised,
+  title={Unsupervised Feature Representation Learning for Domain-generalized Cross-domain Image Retrieval},
+  author={Hu, Conghui and Zhang, Can and Lee, Gim Hee},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+```
